@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181D23;
+}
+
+/* .banner {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+} */
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.container {
+    /* background-color: deeppink; */
+    float: right;
+    height: 25px;
+    width: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menulogo {
+    width: 30px;
+    height: 3px;
+    background-color: snow;
+}
+
+.menu {
+    background-color: #0f0f0f;
+    width: 30%;
+    height: 100vh;
+    padding: 50px;
+    transform: translateX(-500px);
+    transition: 0.5s;
+    z-index: 3;
+    position: relative;
+}
+
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px solid rgb(71, 71, 77);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.showmenu {
+    transform: translateX(0);
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li:first-child {
+    font-weight: bold;
+}
+
+.menu li a {
+    color: snow;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    transition: font-weight 0.2s;
+    letter-spacing: 2px;
+}
+
+.menu li a:hover {
+    font-weight: bold;
+}
+
+.text {
+    color: aqua;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #07252d;
+    /* transform: translateY(-500px); */
+}
+.h2text{
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 10px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-flex: below 1px linear-gradient(tranparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+    margin-top: -500px;
+    z-index: 2;
+    position: relative;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+.flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .image {
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+
+}
+.paragraph{
+    display: block;
+}
+.para{
+    color: black;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: white;
+} */
+.sharethis-inline-share-buttons{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.container5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+    background-color: #FFD304;
+}
+.column{
+    flex-basis: 25%;
+    margin: 20px;
+}
+.footlogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.container5 h2{
+    color: black;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.container5 p{
+    color: black;
+    margin-top: 10px;
+}
+.container5 ul li{
+    list-style: none;
+}
+.container5 ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.container5 ul li a:hover{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.7s ease;
+    transform: translateX(7px);
+}
+.form1{
+    padding: 25px;
+}
+.name{
+    width: 350px;
+    margin-bottom: 10px;
+}
+.email{
+    width: 350px;
+    margin-bottom: 10px;
+}
+.button{
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+}
+.copyright{
+    text-align: center;
+    color: white;
+}
+.checked {
+    color: #FFD304;
+  }
+  ::-webkit-scrollbar{
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#FFD304);
+    border-radius: 6px;
+  }
+  .container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headingt h1 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+
+}
+.cast {
+    color: #FFD304;
+}
+.flip-container{
+    display: flex;
+}
+.flip-card {
+    background-color: transparent;
+    width: 600px;
+    height: 315px;
+    perspective: 1000px;
+    margin-top: 30px;
+    flex-basis: 50%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+  }
+  
+  .flip-card-back {
+    /* background-color: #bbb; */
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .music-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .music-container .box{
+    height: 8rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+
+  }
+  .music-container .box .image{
+    height: 100%;
+    width: 50%;
+  }
+  .music-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .music-container .box .music{
+    width: 100%;
+  }
+  .music-container .box .music audio{
+    width: 100%;
+    outline: none;
+  }
+  .music-container .box .music audio::-webkit-media-controls-enclosure{
+    background: none;
+  }
